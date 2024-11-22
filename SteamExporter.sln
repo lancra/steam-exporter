@@ -19,12 +19,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		stylecop.json = stylecop.json
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A2E7B76A-A418-4167-9D47-5D7C6555A0AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteamExporter.Cli", "src\Cli\SteamExporter.Cli.csproj", "{A97D0335-90C7-490D-9DBE-3BACAF977E3B}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CAF7420C-7DAC-443B-BCAF-911938ACB0C0}"
 	ProjectSection(SolutionItems) = preProject
 		tests\Directory.Build.props = tests\Directory.Build.props
 		tests\TestingSuppressions.cs = tests\TestingSuppressions.cs
 		tests\xunit.runner.json = tests\xunit.runner.json
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteamExporter.Facts", "tests\Facts\SteamExporter.Facts.csproj", "{C1E5D732-70E7-429E-AE0E-553F0F616A9D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{78F42C98-8441-419D-923C-2B7DFF32BD8F}"
 EndProject
@@ -36,6 +42,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A97D0335-90C7-490D-9DBE-3BACAF977E3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A97D0335-90C7-490D-9DBE-3BACAF977E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A97D0335-90C7-490D-9DBE-3BACAF977E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A97D0335-90C7-490D-9DBE-3BACAF977E3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1E5D732-70E7-429E-AE0E-553F0F616A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1E5D732-70E7-429E-AE0E-553F0F616A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1E5D732-70E7-429E-AE0E-553F0F616A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1E5D732-70E7-429E-AE0E-553F0F616A9D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E3B36DFA-6623-4159-ABC2-4F77686149BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E3B36DFA-6623-4159-ABC2-4F77686149BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3B36DFA-6623-4159-ABC2-4F77686149BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +59,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{A97D0335-90C7-490D-9DBE-3BACAF977E3B} = {A2E7B76A-A418-4167-9D47-5D7C6555A0AF}
+		{C1E5D732-70E7-429E-AE0E-553F0F616A9D} = {CAF7420C-7DAC-443B-BCAF-911938ACB0C0}
 		{E3B36DFA-6623-4159-ABC2-4F77686149BC} = {78F42C98-8441-419D-923C-2B7DFF32BD8F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

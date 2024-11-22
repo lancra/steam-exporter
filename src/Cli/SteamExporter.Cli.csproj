@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>stexp</AssemblyName>
+    <Description>Exporter for Steam library collections.</Description>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+</Project>
