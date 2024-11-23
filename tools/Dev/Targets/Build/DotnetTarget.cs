@@ -7,6 +7,18 @@ internal sealed class DotnetTarget : ITarget
             BuildTargets.Dotnet,
             "Builds the solution into a set of output binaries.",
             dependsOn: [BuildTargets.Clean],
-            async () => await DotnetCli.Run("build", "/warnaserror")
-                .ConfigureAwait(false));
+            Execute);
+
+    private static async Task Execute()
+    {
+        var arguments = new List<string>();
+
+        if (!EnvironmentVariables.LocalBuild.AsFlag())
+        {
+            arguments.Add("/warnaserror");
+        }
+
+        await DotnetCli.Run("build", [.. arguments])
+            .ConfigureAwait(false);
+    }
 }
