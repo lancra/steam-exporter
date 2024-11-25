@@ -7,7 +7,7 @@ internal class TestTarget : ITarget
         new(
             BuildTargets.TestUnit,
             "Tests individual components of the application.",
-            [new("facts", "tests/Facts")]),
+            [new("cli", "tests/Cli.Facts")]),
     ];
 
     public void Setup(Bullseye.Targets targets)

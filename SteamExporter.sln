@@ -30,7 +30,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CAF7420C
 		tests\xunit.runner.json = tests\xunit.runner.json
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteamExporter.Facts", "tests\Facts\SteamExporter.Facts.csproj", "{C1E5D732-70E7-429E-AE0E-553F0F616A9D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteamExporter.Cli.Facts", "tests\Cli.Facts\SteamExporter.Cli.Facts.csproj", "{C1E5D732-70E7-429E-AE0E-553F0F616A9D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{78F42C98-8441-419D-923C-2B7DFF32BD8F}"
 EndProject
